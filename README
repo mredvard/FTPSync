@@ -1,0 +1,12 @@
+Version: 1.0
+	
+Instalación:
+	Se requiere la instalación de ftputil para correcto funcionamiento
+
+Instalación de ftputil:
+
+	# python setup.py install 
+	Se requieren permisos de root
+Para ejecutar el programa
+
+	$ python ftpsync.py
