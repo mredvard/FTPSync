@@ -1,0 +1,120 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'mainwindow.ui'
+#
+# Created: Thu Feb  2 02:01:16 2012
+#      by: PyQt4 UI code generator 4.8.5
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    _fromUtf8 = lambda s: s
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName(_fromUtf8("MainWindow"))
+        MainWindow.setWindowModality(QtCore.Qt.WindowModal)
+        MainWindow.resize(672, 211)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "FTP Sync", None, QtGui.QApplication.UnicodeUTF8))
+        MainWindow.setToolTip(_fromUtf8(""))
+        MainWindow.setStatusTip(_fromUtf8(""))
+        self.centralwidget = QtGui.QWidget(MainWindow)
+        self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        self.verticalLayoutWidget = QtGui.QWidget(self.centralwidget)
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 70, 651, 107))
+        self.verticalLayoutWidget.setObjectName(_fromUtf8("verticalLayoutWidget"))
+        self.verticalLayout = QtGui.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout.setMargin(0)
+        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        self.barProgreso = QtGui.QProgressBar(self.verticalLayoutWidget)
+        self.barProgreso.setEnabled(False)
+        self.barProgreso.setProperty("value", 0)
+        self.barProgreso.setObjectName(_fromUtf8("barProgreso"))
+        self.verticalLayout.addWidget(self.barProgreso)
+        self.btnTransferir = QtGui.QPushButton(self.verticalLayoutWidget)
+        self.btnTransferir.setEnabled(False)
+        self.btnTransferir.setText(_fromUtf8(""))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8("download.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btnTransferir.setIcon(icon)
+        self.btnTransferir.setIconSize(QtCore.QSize(64, 64))
+        self.btnTransferir.setObjectName(_fromUtf8("btnTransferir"))
+        self.verticalLayout.addWidget(self.btnTransferir)
+        self.horizontalLayoutWidget_3 = QtGui.QWidget(self.centralwidget)
+        self.horizontalLayoutWidget_3.setGeometry(QtCore.QRect(10, 10, 651, 33))
+        self.horizontalLayoutWidget_3.setObjectName(_fromUtf8("horizontalLayoutWidget_3"))
+        self.horizontalLayout_3 = QtGui.QHBoxLayout(self.horizontalLayoutWidget_3)
+        self.horizontalLayout_3.setMargin(0)
+        self.horizontalLayout_3.setObjectName(_fromUtf8("horizontalLayout_3"))
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        self.lblHost = QtGui.QLabel(self.horizontalLayoutWidget_3)
+        self.lblHost.setText(QtGui.QApplication.translate("MainWindow", "Host", None, QtGui.QApplication.UnicodeUTF8))
+        self.lblHost.setObjectName(_fromUtf8("lblHost"))
+        self.horizontalLayout.addWidget(self.lblHost)
+        self.txtHost = QtGui.QLineEdit(self.horizontalLayoutWidget_3)
+        self.txtHost.setText(_fromUtf8(""))
+        self.txtHost.setObjectName(_fromUtf8("txtHost"))
+        self.horizontalLayout.addWidget(self.txtHost)
+        self.horizontalLayout_3.addLayout(self.horizontalLayout)
+        self.horizontalLayout_2 = QtGui.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
+        self.lblLogin = QtGui.QLabel(self.horizontalLayoutWidget_3)
+        self.lblLogin.setText(QtGui.QApplication.translate("MainWindow", "Login", None, QtGui.QApplication.UnicodeUTF8))
+        self.lblLogin.setObjectName(_fromUtf8("lblLogin"))
+        self.horizontalLayout_2.addWidget(self.lblLogin)
+        self.horizontalLayout_3.addLayout(self.horizontalLayout_2)
+        self.txtLogin = QtGui.QLineEdit(self.horizontalLayoutWidget_3)
+        self.txtLogin.setText(_fromUtf8(""))
+        self.txtLogin.setObjectName(_fromUtf8("txtLogin"))
+        self.horizontalLayout_3.addWidget(self.txtLogin)
+        self.horizontalLayout_4 = QtGui.QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(_fromUtf8("horizontalLayout_4"))
+        self.lblPassword = QtGui.QLabel(self.horizontalLayoutWidget_3)
+        self.lblPassword.setText(QtGui.QApplication.translate("MainWindow", "Password", None, QtGui.QApplication.UnicodeUTF8))
+        self.lblPassword.setObjectName(_fromUtf8("lblPassword"))
+        self.horizontalLayout_4.addWidget(self.lblPassword)
+        self.txtPassword = QtGui.QLineEdit(self.horizontalLayoutWidget_3)
+        self.txtPassword.setText(_fromUtf8(""))
+        self.txtPassword.setEchoMode(QtGui.QLineEdit.Password)
+        self.txtPassword.setObjectName(_fromUtf8("txtPassword"))
+        self.horizontalLayout_4.addWidget(self.txtPassword)
+        self.btnConectar = QtGui.QPushButton(self.horizontalLayoutWidget_3)
+        self.btnConectar.setText(QtGui.QApplication.translate("MainWindow", "Conectar", None, QtGui.QApplication.UnicodeUTF8))
+        self.btnConectar.setObjectName(_fromUtf8("btnConectar"))
+        self.horizontalLayout_4.addWidget(self.btnConectar)
+        self.horizontalLayout_3.addLayout(self.horizontalLayout_4)
+        self.horizontalLayoutWidget_5 = QtGui.QWidget(self.centralwidget)
+        self.horizontalLayoutWidget_5.setGeometry(QtCore.QRect(10, 40, 651, 31))
+        self.horizontalLayoutWidget_5.setObjectName(_fromUtf8("horizontalLayoutWidget_5"))
+        self.horizontalLayout_5 = QtGui.QHBoxLayout(self.horizontalLayoutWidget_5)
+        self.horizontalLayout_5.setMargin(0)
+        self.horizontalLayout_5.setObjectName(_fromUtf8("horizontalLayout_5"))
+        self.lblHost_2 = QtGui.QLabel(self.horizontalLayoutWidget_5)
+        self.lblHost_2.setText(QtGui.QApplication.translate("MainWindow", "Carpeta", None, QtGui.QApplication.UnicodeUTF8))
+        self.lblHost_2.setObjectName(_fromUtf8("lblHost_2"))
+        self.horizontalLayout_5.addWidget(self.lblHost_2)
+        self.txtRaiz = QtGui.QLineEdit(self.horizontalLayoutWidget_5)
+        self.txtRaiz.setText(QtGui.QApplication.translate("MainWindow", "/", None, QtGui.QApplication.UnicodeUTF8))
+        self.txtRaiz.setObjectName(_fromUtf8("txtRaiz"))
+        self.horizontalLayout_5.addWidget(self.txtRaiz)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtGui.QStatusBar(MainWindow)
+        self.statusbar.setObjectName(_fromUtf8("statusbar"))
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        pass
+

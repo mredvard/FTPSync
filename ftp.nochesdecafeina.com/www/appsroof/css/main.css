@@ -1,0 +1,145 @@
+body {
+	background-attachment: scroll;
+	background-image: url(../images/foot_backgorund.jpg);
+	background-repeat: repeat;
+	background-position: 0 0;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#logo {
+	width:706px;
+	height:143px;
+	background: url(../images/logo.png) no-repeat scroll center top transparent;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	background-attachment: scroll;
+	background-image: url(../images/backgorund.jpg);
+	background-repeat: repeat;
+	height: 400px;
+}
+#textbox_wrapper {
+	height: 71px;
+	width: 700px;
+	padding: 20px 0 0 0;
+	position:relative;
+}
+.thanks {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 71px;
+	font-weight: normal;
+	text-align: center;
+	color: #FFF;
+	position: absolute;
+	top:20px;
+	left:0px;
+	height:inherit;
+	width:inherit;
+	display:none;
+}
+
+.textbox {
+	background: url(../images/textbox.png) no-repeat scroll center top transparent;
+	border:0px;
+	height:inherit;
+}
+
+
+#content_wrapper {
+	position: absolute;
+	top: 20%;
+}
+
+#slogan {
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(../images/slogan.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 487px;
+	height: 36px;
+	margin-top: 20px;
+	margin-left: 115px;
+}
+.button {
+	background-image: url(../images/signupbutton.png);
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 176px;
+	position: absolute;
+	margin: 10px 50px;
+	border: 0;
+	background-position: 0px 0px;
+	background-color:transparent;
+}
+
+.button:hover {
+	background-position: 0px -50px;
+	cursor:pointer;
+}
+
+.button:active {
+	background-position: 0px -100px;
+	cursor:pointer;
+}
+
+.email {
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	font-family: Arial, sans-serif;
+	font-size: 32px;
+	color: #6E8CB2;
+	line-height: 35px;
+	padding: 15px 30px;
+	width: 400px;
+	outline:none;
+}
+form {
+display: block;
+}
+.companies_logos {
+	background-image: url(../images/comlogos.png);
+	background-repeat: no-repeat;
+	height: 83px;
+	width: 303px;
+	margin-left: 206px;
+}
+.redes {
+	margin-left: 325px;
+	margin-top: 20px;
+}
+.redes ul li a {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-image: url(../images/social_logos.png);
+	margin-right: 5px;
+}
+.redes ul li a.facebook {
+	background-position: 0px 0px;
+}
+.redes ul li a.facebook:hover {
+	background-position: 0px 20px;
+}
+.redes ul li a.twitter {
+	background-position: 20px 0px;
+}
+.redes ul li a.twitter:hover {
+	background-position: 20px 20px;
+}
+.redes ul {
+	list-style-type: none;
+}
+.redes ul h4 {
+	color: #364556;
+	margin-left: -14px;
+}
+
+.redes ul li {
+	float: left;
+}
